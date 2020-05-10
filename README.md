@@ -1,0 +1,1 @@
+# Algorithm tasks solutions for Outtalent

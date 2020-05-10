@@ -1,0 +1,10 @@
+# Operation system
+.DS_Store
+
+# Editor
+.idea
+
+# Enviroment
+venv
+
+
