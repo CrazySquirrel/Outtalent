@@ -1,2 +1,2 @@
 # Write your MySQL query statement below
-UPDATE salary SET sex=if(sex='m','f','m')
+update salary set sex=if(sex='m','f','m')

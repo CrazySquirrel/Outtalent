@@ -2,8 +2,8 @@
 
 ## Codding solutions
 
-* [Leetcode](https://github.com/CrazySquirrel/Outtalent/tree/master/Leetcode)
+* [Leetcode](https://github.com/CrazySquirrel/Outtalent/tree/master/Leetcode/README.md)
 
 ## System Design
 
-* [System Design](https://github.com/CrazySquirrel/Outtalent/tree/master/System%20Design)
+* [System Design](https://github.com/CrazySquirrel/Outtalent/tree/master/System%20Design/README.md)

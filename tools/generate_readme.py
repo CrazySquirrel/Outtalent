@@ -28,7 +28,7 @@ for site in SITES:
             tasks.append(file)
 
     for task in sorted(tasks, key=lambda x: int(x.split('.')[0])):
-        site_readme.append('* [%s](%s)' % (task,urllib.parse.quote(task)))
+        site_readme.append('* [%s](%s/README.md)' % (task,urllib.parse.quote(task)))
 
     with open(os.path.join(site_path, 'README.md'), 'w') as readme:
         readme.write('\r\n'.join(site_readme))
