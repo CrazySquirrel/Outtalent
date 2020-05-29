@@ -1,4 +1,4 @@
-# 9. Palindrome Number
+# [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
@@ -28,3 +28,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Follow up:
 
 Coud you solve it without converting the integer to a string?
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Revert half of the number](solution1.md) | O(log<sub>10</sub>(n)) | O(1) |

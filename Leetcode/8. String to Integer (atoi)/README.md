@@ -1,4 +1,4 @@
-# 8. String to Integer (atoi)
+# [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
 
 Implement atoi which converts a string to an integer.
 
@@ -56,3 +56,11 @@ Output: -2147483648
 Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer.
              Thefore INT_MIN (−231) is returned.
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Wrong solution](solution1.md) | O((T+P)*2<sup>T+&#189;P</sup>) | O((T+P)*2<sup>T+&#189;P</sup>) |
+| [Direct approach](solution2.md) | O(n) | O(1) |
+

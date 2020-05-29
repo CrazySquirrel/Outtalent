@@ -22,3 +22,14 @@ Explanation: There is no common prefix among the input strings.
 ## Note:
 
 * All given inputs are in lowercase letters a-z.
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Horizontal scanning](solution1.md) | O(S) | O(1) |
+| [Vertical scanning](solution2.md) | O(S) | O(1) |
+| [Divide and conquer](solution3.md) | O(S) | O(m⋅logn) |
+| [Binary search](solution4.md) | O(S⋅logm) | O(1) |
+| [Min max compare](solution5.md) | O(N + S) | O(S) |
+| [Further Thoughts / Follow up](solution6.md) | O(S) + O(m) | O(S) |

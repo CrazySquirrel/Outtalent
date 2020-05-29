@@ -1,41 +1,41 @@
-import re
+INT_MAX = 2147483647
+INT_MIN = 2147483648  # without sign
 
-INT_MAX = (1 << 31) - 1
-INT_MIN = -1 << 31
+NUM_SET = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'}
+SIGN_SET = {'-', '+'}
+NUM_START_SET = SIGN_SET | NUM_SET
+
+ZERO = ord('0')
 
 
 class Solution:
     def myAtoi(self, S: str) -> int:
         if not S: return 0
 
-        start = 0
-        end = len(S)
+        i = 0
 
-        # find start
-        for i in range(len(S)):
-            if S[i] != ' ':
-                start = i
-                break
+        while i < len(S) and S[i] == ' ': i += 1
 
-        # check if it's valid start
-        if S[start] != '-' and S[start] != '+' and not S[start].isdigit():
-            return 0
+        if i == len(S) or S[i] not in NUM_START_SET: return 0
 
-        sign = 1
+        is_negative = S[i] == '-'
 
-        # check fo sign
-        if S[start] == '-' or S[start] == '+':
-            sign = -1 if S[start] == '-' else 1
-            start += 1
+        if S[i] in SIGN_SET: i += 1
 
-        # check if it's valid digit
-        if start == len(S) or not S[start].isdigit():
-            return 0
+        if i == len(S) or S[i] not in NUM_SET: return 0
 
-        # find end
-        for i in range(start, len(S)):
-            if not S[i].isdigit():
-                end = i
-                break
+        res = 0
 
-        return min(INT_MAX, max(INT_MIN, sign * int(S[start:end])))
+        while i < len(S) and S[i] in NUM_SET:
+            digit = ord(S[i]) - ZERO
+
+            if is_negative:
+                if res > INT_MIN // 10 or (res == INT_MIN // 10 and digit > 8): return -INT_MIN
+            else:
+                if res > INT_MAX // 10 or (res == INT_MAX // 10 and digit > 7): return INT_MAX
+
+            res = res * 10 + digit
+
+            i += 1
+
+        return -res if is_negative else res

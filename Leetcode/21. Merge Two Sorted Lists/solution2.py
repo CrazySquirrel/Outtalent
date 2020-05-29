@@ -9,26 +9,26 @@ class Solution:
         if not l1: return l2
         if not l2: return l1
 
-        result = l3 = ListNode()
+        dummy = curr = ListNode()
 
         while l1 and l2:
             if l1.val > l2.val:
-                l3.next = ListNode(l2.val)
-                l3 = l3.next
+                curr.next = ListNode(l2.val)
+                curr = curr.next
                 l2 = l2.next
             else:
-                l3.next = ListNode(l1.val)
-                l3 = l3.next
+                curr.next = ListNode(l1.val)
+                curr = curr.next
                 l1 = l1.next
 
         while l1:
-            l3.next = ListNode(l1.val)
-            l3 = l3.next
+            curr.next = ListNode(l1.val)
+            curr = curr.next
             l1 = l1.next
 
         while l2:
-            l3.next = ListNode(l2.val)
-            l3 = l3.next
+            curr.next = ListNode(l2.val)
+            curr = curr.next
             l2 = l2.next
 
-        return result.next
+        return dummy.next

@@ -1,4 +1,4 @@
-# 13. Roman to Integer
+# [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
@@ -59,3 +59,9 @@ Input: "MCMXCIV"
 Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Iterative approach](solution1.md) | O(n) | O(1) |

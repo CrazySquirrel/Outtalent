@@ -1,4 +1,4 @@
-# 6. ZigZag Conversion
+# [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
@@ -35,3 +35,11 @@ A   L S  I G
 Y A   H R
 P     I
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Brute Force](solution1.md) | O(n<sup>2</sup>) | O(1) |
+| [Two Pointer Approach](solution2.md) | O(n) | O(1) |
+

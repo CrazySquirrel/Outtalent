@@ -1,4 +1,4 @@
-# 26. Remove Duplicates from Sorted Array
+# [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 
@@ -42,3 +42,11 @@ for (int i = 0; i < len; i++) {
     print(nums[i]);
 }
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Set and sort](solution1.md) | O(n log n) | O(n) |
+| [One Pointer](solution2.md) | O(n) | O(1) |
+| [Two Pointers](solution3.md) | O(n) | O(1) |

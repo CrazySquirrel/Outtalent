@@ -1,4 +1,4 @@
-# 19. Remove Nth Node From End of List
+# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 Given a linked list, remove the n-th node from the end of list and return its head.
 
@@ -17,3 +17,10 @@ Given n will always be valid.
 ## Follow up:
 
 Could you do this in one pass?
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Two pass algorithm](solution1.md) | O(L) | O(1) |
+| [One pass algorithm](solution2.md) | O(L) | O(1) |

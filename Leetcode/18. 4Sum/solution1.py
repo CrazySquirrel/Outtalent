@@ -1,21 +1,23 @@
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        h = {}
+        two_sum = {}
 
-        for i in range(len(nums) - 1):
-            for j in range(i + 1, len(nums)):
-                sum_ab = nums[i] + nums[j]
-                if sum_ab not in h: h[sum_ab] = []
-                h[sum_ab].append((i, j))
+        for a in range(len(nums) - 1):
+            for b in range(a + 1, len(nums)):
+                sum_ab = nums[a] + nums[b]
+                if sum_ab not in two_sum: two_sum[sum_ab] = []
+                two_sum[sum_ab].append((a, b))
 
         result = set()
 
-        for sum_ab in h:
+        for sum_ab in two_sum:
             sum_cd = target - sum_ab
-            if sum_cd in h:
-                for a, b in h[sum_ab]:
-                    for c, d in h[sum_cd]:
-                        if a != c and a != d and b != c and b != d:
-                            result.add(tuple(sorted([nums[a], nums[b], nums[c], nums[d]])))
+
+            if sum_cd not in two_sum: continue
+
+            for a, b in two_sum[sum_ab]:
+                for c, d in two_sum[sum_cd]:
+                    if a != c and a != d and b != c and b != d:
+                        result.add(tuple(sorted([nums[a], nums[b], nums[c], nums[d]])))
 
         return result

@@ -1,14 +1,22 @@
 class Solution:
-    def convert(self, s: str, n: int) -> str:
-        if n == 1: return s
+    def convert(self, s: str, numRows: int) -> str:
+        if numRows == 1: return s
 
-        result = []
-        c, l = 2 * n - 2, len(s)
+        rows = [''] * min(numRows, len(s))
+        cur_row = 0
+        goind_down = False
 
-        for i in range(n):
-            for j in range(0, l - i, c):
-                result.append(s[j + i])
-                if i != 0 and i != n - 1 and j + c - i < l:
-                    result.append(s[j + c - i])
+        for c in s:
+            rows[cur_row] += c
 
-        return ''.join(result)
+            if cur_row == 0 or cur_row == numRows - 1:
+                goind_down = not goind_down
+
+            cur_row += 1 if goind_down else -1
+
+        result = ''
+
+        for row in rows:
+            result += row
+
+        return result

@@ -1,11 +1,9 @@
+V1 = ["", "M", "MM", "MMM"]
+V2 = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+V3 = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+V4 = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+
+
 class Solution:
     def intToRoman(self, num: int) -> str:
-        roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
-        integers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
-        result = ''
-        for i in range(13):
-            if num >= integers[i]:
-                count = num // integers[i]
-                num -= integers[i] * count
-                result += roman[i] * count
-        return result
+        return V1[num // 1000] + V2[(num % 1000) // 100] + V3[(num % 100) // 10] + V4[num % 10];

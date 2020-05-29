@@ -1,8 +1,8 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        h = {}
         for i in range(len(nums)):
-            if target - nums[i] in h:
-                return [h[target - nums[i]], i]
-            h[nums[i]] = i
-        return []
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+        raise ValueError('No two sum solution')

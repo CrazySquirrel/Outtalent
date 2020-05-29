@@ -4,21 +4,18 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        if not l1 and not l2: return None
-        if not l1: return l2
-        if not l2: return l1
-
-        if l1.val > l2.val:
-            l2.next = self.mergeTwoLists(l1, l2.next)
-            return l2
-        else:
-            l1.next = self.mergeTwoLists(l1.next, l2)
-            return l1
-
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
-        if not lists: return None
-        result = lists[0]
-        for i in range(1, len(lists)):
-            result = self.mergeTwoLists(result, lists[i])
-        return result
+        nums = []
+
+        for l in lists:
+            while l:
+                nums.append(l.val)
+                l = l.next
+
+        dummy = curr = ListNode(0)
+
+        for num in sorted(nums):
+            curr.next = ListNode(num)
+            curr = curr.next
+
+        return dummy.next

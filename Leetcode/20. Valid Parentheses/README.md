@@ -1,4 +1,4 @@
-# 20. Valid Parentheses
+# [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -43,3 +43,9 @@ Output: false
 Input: "{[]}"
 Output: true
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Stacks](solution1.md) | O(n) | O(n) |

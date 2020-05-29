@@ -1,4 +1,4 @@
-# 7. Reverse Integer
+# [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
 Given a 32-bit signed integer, reverse digits of an integer.
 
@@ -26,3 +26,10 @@ Output: 21
 ## Note:
 
 Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Pop and Push Digits & Check before Overflow](solution1.md) | O(log(x)) | O(1) |
+| [Pop and Push Digits & Simplified Check before Overflow](solution2.md) | O(log(x)) | O(1) |

@@ -1,22 +1,25 @@
-from collections import Counter
-
-
 class Solution:
     def threeSum(self, nums):
-        counter = Counter(nums)
-        result = [] if counter[0] < 3 else [[0, 0, 0]]
-        ns, ps = [], []
+        counter = {}
+        negative, positive = set(), set()
 
-        for x in counter:
+        for x in nums:
+            if x not in counter:
+                counter[x] = 0
+
+            counter[x] += 1
+
             if x <= 0:
-                ns.append(x)
+                negative.add(x)
             else:
-                ps.append(x)
+                positive.add(x)
 
-        for n in ns:
-            for p in ps:
+        result = set() if counter.get(0, 0) < 3 else {(0, 0, 0)}
+
+        for n in negative:
+            for p in positive:
                 x = -n - p
                 if x in counter and (x in {n, p} and counter[x] > 1 or n < x < p):
-                    result.append([n, x, p])
+                    result.add((n, x, p))
 
         return result
