@@ -21,3 +21,7 @@ return [0, 1].
 | [Two-pass Hash Table](solution2.md) | O(n) | O(n) |
 | [One-pass Hash Table](solution3.md) | O(n) | O(n) |
 | [One-pass Hash Table (Optimized)](solution4.md) | O(n) | O(n) |
+
+## Video
+
+[![1. Two Sum](http://img.youtube.com/vi/5yaywtZXh9U/0.jpg)](http://www.youtube.com/watch?v=5yaywtZXh9U "1. Two Sum")

@@ -6,12 +6,12 @@
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         result = head = ListNode()
-        v = 0
+        carry = 0
         while l1 or l2:
-            if l1: v, l1 = v + l1.val, l1.next
-            if l2: v, l2 = v + l2.val, l2.next
-            head.next = ListNode(v % 10)
+            if l1: carry, l1 = carry + l1.val, l1.next
+            if l2: carry, l2 = carry + l2.val, l2.next
+            head.next = ListNode(carry % 10)
             head = head.next
-            v //= 10
-        if v: head.next = ListNode(v)
+            carry //= 10
+        if carry: head.next = ListNode(carry)
         return result.next

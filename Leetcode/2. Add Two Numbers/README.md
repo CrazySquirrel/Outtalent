@@ -18,3 +18,10 @@ Explanation: 342 + 465 = 807.
 |-------------|-----------------|------------------|
 | [Elementary Math](solution1.md) | O(max(m,n)) | O(max(m,n)) |
 | [Elementary Math (Optimized)](solution2.md) | O(max(m,n)) | O(max(m,n)) |
+| [Recursive](solution3.md) | O(max(m,n)) | O(max(m,n)) |
+| [Recursive with short cut](solution4.md) | O(max(m,n)) | O(max(m,n)) |
+| [Iterative with short cut](solution5.md) | O(max(m,n)) | O(max(m,n)) |
+
+## Video
+
+[![2. Add Two Numbers](http://img.youtube.com/vi/h65dc2XYsG0/0.jpg)](http://www.youtube.com/watch?v=h65dc2XYsG0 "2. Add Two Numbers")
