@@ -2,12 +2,13 @@ class Solution:
     def isMatch(self, text: str, pattern: str) -> bool:
         memo = {}
 
+        @lru_cache(None)
         def dp(i, j):
             if (i, j) in memo: return memo[i, j]
             if j == len(pattern):
                 memo[i, j] = i == len(text)
             else:
-                first_match = i < len(text) and pattern[j] in {text[i], '.'}
+                first_match = i < len(text) and (pattern[j] == text[i] or pattern[j] == '.')
                 if j + 1 < len(pattern) and pattern[j + 1] == '*':
                     memo[i, j] = dp(i, j + 2) or first_match and dp(i + 1, j)
                 else:

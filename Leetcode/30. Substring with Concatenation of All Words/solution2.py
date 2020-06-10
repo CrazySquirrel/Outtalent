@@ -7,26 +7,21 @@ class Solution:
         if not all([word in s for word in words]): return []
 
         words_counter = Counter(words)
-        words_length = len(words)
-
-        word_length = len(words[0])
+        words_count = len(words)
+        word_len = len(words[0])
 
         result = []
 
-        for i in range(len(s) - word_length * words_length + 1):
-            j, dic = 0, defaultdict(int)
+        for i in range(len(s) - word_len * words_count + 1):
+            h = defaultdict(int)
 
-            while j < words_length:
-                k = i + word_length * j
+            for j in range(words_count):
+                k = i + j * word_len
+                word = s[k:k + word_len]
+                h[word] += 1
 
-                word = s[k:k + word_length]
-
-                dic[word] += 1
-
-                if dic[word] > words_counter[word]: break
-
-                j += 1
-
-            if j == words_length: result.append(i)
+                if h[word] > words_counter[word]: break
+            else:
+                result.append(i)
 
         return result
