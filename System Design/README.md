@@ -33,7 +33,7 @@
 * [Twitter Search](Problems/Twitter%20Search/README.md)
 * [Web Crawler](Problems/Web%20Crawler/README.md)
 * [Facebook Newsfeed](Problems/Facebook%20Newsfeed/README.md)
-* [-][Yelp or Nearby Friends](Problems/Yelp%20or%20Nearby%20Friends/README.md)
-* [-][Uber backend](Problems/Uber%20backend/README.md)
-* [-][Ticketmaster](Problems/Ticketmaster/README.md)
+* [Yelp or Nearby Friends](Problems/Yelp%20or%20Nearby%20Friends/README.md)
+* [Uber backend](Problems/Uber%20backend/README.md)
+* [Ticketmaster](Problems/Ticketmaster/README.md)
 
