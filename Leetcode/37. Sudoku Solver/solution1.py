@@ -40,5 +40,3 @@ class Solution:
         grid = [full - cell for cell in grid]
 
         self.dfs(board, rows, cols, grid)
-
-        print(board)

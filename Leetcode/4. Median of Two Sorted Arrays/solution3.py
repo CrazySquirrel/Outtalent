@@ -1,27 +1,28 @@
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        lens = len(nums1) + len(nums2)
+    def findMedianSortedArrays(self, A: List[int], B: List[int]) -> float:
+        lens = len(A) + len(B)
+
+        def kth(ai: int, al: int, bi: int, bl: int, k: int):
+            while True:
+                if al - ai < 0: return B[k + bi]
+                if bl - bi < 0: return A[k + ai]
+                if k < 1: return min(A[k + ai], B[k + bi])
+                am, bm = (ai + al) // 2, (bi + bl) // 2
+                av, bv = A[am], B[bm]
+                if (am - ai) + (bm - bi) < k:
+                    if av > bv:
+                        k = k - (bm - bi) - 1
+                        bi = bm + 1
+                    else:
+                        k = k - (am - ai) - 1
+                        ai = am + 1
+                else:
+                    if av > bv:
+                        al = am - 1
+                    else:
+                        bl = bm - 1
+
         if lens % 2 == 1:
-            return self.kthSmallest(nums1, nums2, lens // 2)
+            return kth(0, len(A) - 1, 0, len(B) - 1, lens // 2)
         else:
-            return (self.kthSmallest(nums1, nums2, lens // 2 - 1) + self.kthSmallest(nums1, nums2, lens // 2)) / 2.0
-
-    def kthSmallest(self, nums1: List[int], nums2: List[int], k: int) -> float:
-        if not nums1:
-            return nums2[k]
-        if not nums2:
-            return nums1[k]
-
-        midIdx1, midIdx2 = len(nums1) // 2, len(nums2) // 2
-        midVal1, midVal2 = nums1[midIdx1], nums2[midIdx2]
-
-        if k > midIdx1 + midIdx2:
-            if midVal1 < midVal2:
-                return self.kthSmallest(nums1[midIdx1 + 1:], nums2, k - midIdx1 - 1)
-            else:
-                return self.kthSmallest(nums1, nums2[midIdx2 + 1:], k - midIdx2 - 1)
-        else:
-            if midVal1 > midVal2:
-                return self.kthSmallest(nums1[:midIdx1], nums2, k)
-            else:
-                return self.kthSmallest(nums1, nums2[:midIdx2], k)
+            return (kth(0, len(A) - 1, 0, len(B) - 1, lens // 2) + kth(0, len(A) - 1, 0, len(B) - 1, lens // 2 - 1)) / 2

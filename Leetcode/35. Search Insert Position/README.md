@@ -1,4 +1,4 @@
-# 35. Search Insert Position
+# [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
 Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
@@ -31,3 +31,11 @@ Output: 4
 Input: [1,3,5,6], 0
 Output: 0
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Linear Scan](solution1.md) | O(n) | O(1) |
+| [Binary Search](solution2.md) | O(log(n)) | O(1) |
+| [Binary Search](solution3.md) | O(log(n)) | O(1) |

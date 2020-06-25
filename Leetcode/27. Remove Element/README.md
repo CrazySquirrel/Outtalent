@@ -46,3 +46,12 @@ for (int i = 0; i < len; i++) {
     print(nums[i]);
 }
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Pop elements](solution1.md) | O(kn) | O(1) |
+| [List comprehension](solution2.md) | O(n) | O(n) |
+| [Two Pointers](solution3.md) | O(n) | O(1) |
+| [Two Pointers (rare)](solution4.md) | O(n) | O(1) |

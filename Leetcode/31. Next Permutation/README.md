@@ -1,4 +1,4 @@
-# 31. Next Permutation
+# [31. Next Permutation](https://leetcode.com/problems/next-permutation/)
 
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
@@ -13,3 +13,9 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 3,2,1 → 1,2,3
 1,1,5 → 1,5,1
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Single Pass Approach](solution1.md) | O(n) | O(1) |

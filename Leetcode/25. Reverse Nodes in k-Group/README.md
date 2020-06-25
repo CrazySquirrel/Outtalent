@@ -1,4 +1,4 @@
-# 25. Reverse Nodes in k-Group
+# [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
@@ -16,3 +16,9 @@ For k = 3, you should return: 3->2->1->4->5
 
 * Only constant extra memory is allowed.
 * You may not alter the values in the list's nodes, only nodes itself may be changed.
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Group reversion](solution1.md) | O(N) | O(1) |

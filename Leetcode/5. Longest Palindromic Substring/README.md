@@ -1,4 +1,4 @@
-# 5. Longest Palindromic Substring
+# [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
 Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
 
@@ -16,3 +16,11 @@ Note: "aba" is also a valid answer.
 Input: "cbbd"
 Output: "bb"
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Simple Recursion](solution1.md) | O(2<sup>n</sup>) | O(n) |
+| [Dynamic programming](solution2.md) | O(n<sup>2</sup>) | O(n<sup>2</sup>) |
+| [Manacher’s Algorithm](solution3.md) | O(n) | O(1) |

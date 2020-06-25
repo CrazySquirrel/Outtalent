@@ -1,4 +1,4 @@
-# 39. Combination Sum
+# [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
 
 Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
 
@@ -31,3 +31,9 @@ A solution set is:
   [3,5]
 ]
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [DFS](solution1.md) | O(k * n<sup>2</sup>) | O(k * n) |

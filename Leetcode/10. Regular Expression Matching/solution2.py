@@ -1,18 +1,14 @@
 class Solution:
     def isMatch(self, text: str, pattern: str) -> bool:
-        memo = {}
-
         @lru_cache(None)
         def dp(i, j):
-            if (i, j) in memo: return memo[i, j]
-            if j == len(pattern):
-                memo[i, j] = i == len(text)
+            if j == len(pattern): return i == len(text)
+
+            first_match = i < len(text) and (pattern[j] == text[i] or pattern[j] == '.')
+            if j + 1 < len(pattern) and pattern[j + 1] == '*':
+                return dp(i, j + 2) or first_match and dp(i + 1, j)
             else:
-                first_match = i < len(text) and (pattern[j] == text[i] or pattern[j] == '.')
-                if j + 1 < len(pattern) and pattern[j + 1] == '*':
-                    memo[i, j] = dp(i, j + 2) or first_match and dp(i + 1, j)
-                else:
-                    memo[i, j] = first_match and dp(i + 1, j + 1)
-            return memo[i, j]
+                return first_match and dp(i + 1, j + 1)
 
         return dp(0, 0)
+

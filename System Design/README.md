@@ -37,3 +37,6 @@
 * [Uber backend](Problems/Uber%20backend/README.md)
 * [Ticketmaster](Problems/Ticketmaster/README.md)
 
+## Video
+
+[![System Design - 1. Glossary](http://img.youtube.com/vi/SqWBGCWTZjU/0.jpg)](http://www.youtube.com/watch?v=SqWBGCWTZjU&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 1. Glossary")

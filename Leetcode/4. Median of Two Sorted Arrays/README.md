@@ -1,4 +1,4 @@
-# 4. Median of Two Sorted Arrays
+# [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
@@ -23,3 +23,15 @@ nums2 = [3, 4]
 
 The median is (2 + 3)/2 = 2.5
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Naive approach](solution1.md) | O(n+m+(n*m)log(n*m)) | v |
+| [Two pointer binary search](solution2.md) | O(log(min(m,n))) | O(1) |
+| [K-th method](solution3.md) | O(log(min(m,n))) | O(1) |
+
+## Video
+
+[![4. Median of Two Sorted Arrays](http://img.youtube.com/vi/XpcApNjZ1hE/0.jpg)](http://www.youtube.com/watch?v=XpcApNjZ1hE&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "4. Median of Two Sorted Arrays")

@@ -4,25 +4,24 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def isLongerThenK(self, head: ListNode, k: int) -> bool:
-        for i in range(k):
-            if not head: return False
-            head = head.next
-        return True
-
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if not head or k <= 1 or not self.isLongerThenK(head, k): return head
+        if not head or k == 0: return head
 
-        curr = head
-        prev = next = None
+        test = head
 
         for i in range(k):
-            if not curr: break
-            next = curr.next
+            if test is None: return head
+            test = test.next
+
+        prev = None
+        curr = head
+
+        for i in range(k):
+            tmp = curr.next
             curr.next = prev
             prev = curr
-            curr = next
+            curr = tmp
 
-        head.next = self.reverseKGroup(next, k)
+        if curr: head.next = self.reverseKGroup(curr, k)
 
         return prev

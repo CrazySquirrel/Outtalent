@@ -24,4 +24,4 @@ return [0, 1].
 
 ## Video
 
-[![1. Two Sum](http://img.youtube.com/vi/5yaywtZXh9U/0.jpg)](http://www.youtube.com/watch?v=5yaywtZXh9U "1. Two Sum")
+[![1. Two Sum](http://img.youtube.com/vi/5yaywtZXh9U/0.jpg)](http://www.youtube.com/watch?v=5yaywtZXh9U&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "1. Two Sum")

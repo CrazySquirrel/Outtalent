@@ -1,4 +1,4 @@
-# 10. Regular Expression Matching
+# [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
 Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
 
@@ -60,3 +60,12 @@ s = "mississippi"
 p = "mis*is*p*."
 Output: false
 ```
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Recursion](solution1.md) | ![](1.png) | ![](1.png) |
+| [Dynamic Programming Top-Down](solution2.md) | O(TP) | O(TP) |
+| [Dynamic Programming Bottom-Up](solution3.md) | O(TP) | O(TP) |
+

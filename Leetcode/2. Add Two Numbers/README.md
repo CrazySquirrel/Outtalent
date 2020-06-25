@@ -24,4 +24,4 @@ Explanation: 342 + 465 = 807.
 
 ## Video
 
-[![2. Add Two Numbers](http://img.youtube.com/vi/h65dc2XYsG0/0.jpg)](http://www.youtube.com/watch?v=h65dc2XYsG0 "2. Add Two Numbers")
+[![2. Add Two Numbers](http://img.youtube.com/vi/h65dc2XYsG0/0.jpg)](http://www.youtube.com/watch?v=h65dc2XYsG0&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "2. Add Two Numbers")

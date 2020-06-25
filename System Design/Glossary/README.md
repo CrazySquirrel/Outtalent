@@ -15,3 +15,7 @@
 * [Long-Polling vs WebSockets vs Server-Sent Events](Long-Polling%20vs%20WebSockets%20vs%20Server-Sent%20Events/README.md)
 * [Off-line processing](Off-line%20processing/README.md)
 * [Platform layer](Platform%20layer/README.md)
+
+## Video
+
+[![System Design - 1. Glossary](http://img.youtube.com/vi/SqWBGCWTZjU/0.jpg)](http://www.youtube.com/watch?v=SqWBGCWTZjU&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 1. Glossary")

@@ -36,3 +36,7 @@ Explanation: The answer is "wke", with the length of 3.
 | [Sliding Window Optimized (HashMap)](solution3.md) | O(n) | O(min(n,m)) |
 | [Sliding Window Optimized (ASCII 128)](solution4.md) | O(n) | O(m) |
 | [Sliding Window Optimized](solution5.md) | O(n) | O(min(n,m)) |
+
+## Video
+
+[![3. Longest Substring Without Repeating Characters](http://img.youtube.com/vi/k0Xj_a_dC9U/0.jpg)](http://www.youtube.com/watch?v=k0Xj_a_dC9U&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "3. Longest Substring Without Repeating Characters")

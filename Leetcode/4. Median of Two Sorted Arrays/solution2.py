@@ -22,4 +22,4 @@ class Solution:
         if (n + m) % 2 == 1: return median
         if i == n: return (median + b[j]) / 2
         if j == m: return (median + a[i]) / 2
-        return (median + min(a[i], b[j])) / 2.0
+        return (median + min(a[i], b[j])) / 2
