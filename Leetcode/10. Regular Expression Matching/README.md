@@ -69,3 +69,6 @@ Output: false
 | [Dynamic Programming Top-Down](solution2.md) | O(TP) | O(TP) |
 | [Dynamic Programming Bottom-Up](solution3.md) | O(TP) | O(TP) |
 
+## Video
+
+[![10. Regular Expression Matching](http://img.youtube.com/vi/G35YHrYxw1o/0.jpg)](http://www.youtube.com/watch?v=G35YHrYxw1o&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "10. Regular Expression Matching")

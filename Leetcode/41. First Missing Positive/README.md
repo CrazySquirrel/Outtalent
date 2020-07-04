@@ -1,4 +1,4 @@
-# 41. First Missing Positive
+# [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 
 Given an unsorted integer array, find the smallest missing positive integer.
 
@@ -26,3 +26,10 @@ Output: 1
 ## Note:
 
 * Your algorithm should run in O(n) time and uses constant extra space.
+
+## Solutions
+
+|   Approach  | Time complexity | Space complexity |
+|-------------|-----------------|------------------|
+| [Approach 1](solution1.md) | O(n) | O(1) |
+| [Approach 2](solution2.md) | O(n) | O(1) |

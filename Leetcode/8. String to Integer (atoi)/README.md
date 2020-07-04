@@ -61,6 +61,8 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Wrong solution](solution1.md) | O((T+P)*2<sup>T+&#189;P</sup>) | O((T+P)*2<sup>T+&#189;P</sup>) |
-| [Direct approach](solution2.md) | O(n) | O(1) |
+| [Direct approach](solution1.md) | O(n) | O(1) |
 
+## Video
+
+[![8. String to Integer (atoi)](http://img.youtube.com/vi/7iR7KNOwwPw/0.jpg)](http://www.youtube.com/watch?v=7iR7KNOwwPw&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "8. String to Integer (atoi)")

@@ -1,30 +1,71 @@
-# Wrong solution
+# Direct approach
 
-In a wrong way solution we can search for int by using regexp, then convert it to int and check for overflow since python supports big numbers. We can also limit the length of int in regexp.
+## Algorithm:
+
+1. Create i pointer
+2. Move i pointer until it reaches first non-space character or the end of the string
+3. If i pointer reaches the end of the string or i character not in the set {'-','+','1','2','3','4','5','6','7','8','9','0'} then return 0
+3. Set Is_negative flag to true if i character is minus
+4. If i character in set {'-','+'} then move i pointer by 1
+5. If i pointer reaches the end of the string or i character not in the set {'1','2','3','4','5','6','7','8','9','0'} then return 0
+6. Create res variable and set it to 0, then start moving i pointer until it reaches the end of the string or first non-digit character and check:
+    1. Get current digit 
+    2. if res less than INT_MIN / 10 then return INT_MIN
+    3. if res if equal to INT_MIN / 10 and digit greater than 8 then return INT_MIN
+    4. if res greater than INT_MAX / 10 then return INT_MAX
+    5. if res if equal to INT_MAX / 10 and digit greater than 7 then return INT_MAX
+    7. Return + or - res based on Is_negative flag
 
 ```python
-import re
-
-INT_MAX = (1 << 31) - 1
-INT_MIN = -1 << 31
-
-
 class Solution:
-    def myAtoi(self, str: str) -> int:
-        x = re.search("^\s*([+-]?[0-9]+)", str)
-        if not x: return 0
-        x = int(x.group(1))
-        if x < INT_MIN: return INT_MIN
-        if INT_MAX < x: return INT_MAX
-        return x
+    def myAtoi(self, S: str) -> int:
+        if not S: return 0
+
+        NUM_SET = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'}
+        SIGN_SET = {'-', '+'}
+        NUM_START_SET = SIGN_SET | NUM_SET
+
+        INT_MAX = 2147483647
+        INT_MIN = -2147483648
+        INT_OVERFLOW = 214748364
+
+        ZERO = ord('0')
+
+        i = 0
+
+        while i < len(S) and S[i] == ' ': i += 1
+
+        if i == len(S) or S[i] not in NUM_START_SET: return 0
+
+        is_negative = S[i] == '-'
+
+        if S[i] in SIGN_SET: i += 1
+
+        if i == len(S) or S[i] not in NUM_SET: return 0
+
+        res = 0
+
+        while i < len(S) and S[i] in NUM_SET:
+            digit = ord(S[i]) - ZERO
+
+            if is_negative:
+                if res > INT_OVERFLOW or (res == INT_OVERFLOW and digit > 8): return INT_MIN
+            else:
+                if res > INT_OVERFLOW or (res == INT_OVERFLOW and digit > 7): return INT_MAX
+
+            res = res * 10 + digit
+
+            i += 1
+
+        return -res if is_negative else res
 ```
 
 ## Complexity Analysis
 
-* Time Complexity: O((T+P)*2<sup>T+&#189;P</sup>) -> O(TP) <sup>*</sup>
+* Time Complexity: O(n)
 
-* Space Complexity: O((T+P)*2<sup>T+&#189;P</sup>) -> O(TP) <sup>*</sup>
+Where n is the length of the string
 
-<sup>*</sup> - It's difficult to say because of the complexity of regular expression analysis, but if we take the analysis from [10. Regular Expression Matching](../10.%20Regular%20Expression%20Matching/README.md) as a basis, we'll get values above. In any case, this solution is not quite correct.
+* Space Complexity: O(1)
 
-[Next](solution2.md)
+[Prev](solution1.md)

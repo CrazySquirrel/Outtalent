@@ -33,3 +33,7 @@ Assume we are dealing with an environment which could only store integers within
 |-------------|-----------------|------------------|
 | [Pop and Push Digits & Check before Overflow](solution1.md) | O(log(x)) | O(1) |
 | [Pop and Push Digits & Simplified Check before Overflow](solution2.md) | O(log(x)) | O(1) |
+
+## Video
+
+[![7. Reverse Integer](http://img.youtube.com/vi/Y2f3zWqcT2Q/0.jpg)](http://www.youtube.com/watch?v=Y2f3zWqcT2Q&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "7. Reverse Integer")

@@ -6,16 +6,16 @@ We proceed with the same recursion as in [Approach 1](./solution1.md), except be
 
 ```python
 class Solution:
-    def isMatch(self, text: str, pattern: str) -> bool:
+    def isMatch(self, s: str, p: str) -> bool:
         @lru_cache(None)
         def dp(i, j):
-            if j == len(pattern): return i == len(text)
-            
-            first_match = i < len(text) and (pattern[j] == text[i] or pattern[j] == '.')
-            if j + 1 < len(pattern) and pattern[j + 1] == '*':
-                return dp(i, j + 2) or first_match and dp(i + 1, j)
+            if j == len(p): return i == len(s)
+
+            fm = i < len(s) and (p[j] == s[i] or p[j] == '.')
+            if j + 1 < len(p) and p[j + 1] == '*':
+                return dp(i, j + 2) or fm and dp(i + 1, j)
             else:
-                return first_match and dp(i + 1, j + 1)
+                return fm and dp(i + 1, j + 1)
 
         return dp(0, 0)
 ```

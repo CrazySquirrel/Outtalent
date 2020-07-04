@@ -17,13 +17,13 @@ If a star is present in the pattern, it will be in the second position pattern[1
 
 ```python
 class Solution:
-    def isMatch(self, text: str, pattern: str) -> bool:
-        if not pattern: return not text
-        first_match = text and pattern[0] in {text[0], '.'}
-        if len(pattern) >= 2 and pattern[1] == '*':
-            return self.isMatch(text, pattern[2:]) or first_match and self.isMatch(text[1:], pattern)
+    def isMatch(self, s: str, p: str) -> bool:
+        if not p: return not s
+        fm = s and p[0] in {s[0], '.'}
+        if len(p) >= 2 and p[1] == '*':
+            return self.isMatch(s, p[2:]) or fm and self.isMatch(s[1:], p)
         else:
-            return first_match and self.isMatch(text[1:], pattern[1:])
+            return fm and self.isMatch(s[1:], p[1:])
 ```
 
 ## Complexity Analysis

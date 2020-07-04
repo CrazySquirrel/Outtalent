@@ -40,6 +40,10 @@ P     I
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Brute Force](solution1.md) | O(n<sup>2</sup>) | O(1) |
-| [Two Pointer Approach](solution2.md) | O(n) | O(1) |
+| [Sort by Row](solution1.md) | O(n) | O(n) |
+| [Visit by Row](solution2.md) | O(n) | O(n) |
+| [Sort by Row (Optimized)](solution3.md) | O(n) | O(n) |
 
+## Video
+
+[![6. ZigZag Conversion](http://img.youtube.com/vi/7YjQx0ooKZI/0.jpg)](http://www.youtube.com/watch?v=7YjQx0ooKZI&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "6. ZigZag Conversion")

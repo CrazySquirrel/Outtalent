@@ -34,3 +34,7 @@ Coud you solve it without converting the integer to a string?
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Revert half of the number](solution1.md) | O(log<sub>10</sub>(n)) | O(1) |
+
+## Video
+
+[![9. Palindrome Number](http://img.youtube.com/vi/hNoAK2o96m4/0.jpg)](http://www.youtube.com/watch?v=hNoAK2o96m4&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "9. Palindrome Number")

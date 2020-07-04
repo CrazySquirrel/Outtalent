@@ -1,5 +1,7 @@
 # URL Shortening [[full version](README.md)]
 
+[![System Design - 2. URL Shortening](http://img.youtube.com/vi/82rNYLMq4nE/0.jpg)](http://www.youtube.com/watch?v=82rNYLMq4nE&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 2. URL Shortening")
+
 ## Summary
 
 ![](3.png)
