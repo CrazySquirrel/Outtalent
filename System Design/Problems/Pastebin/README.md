@@ -1,5 +1,7 @@
 # Pastebin
 
+[![System Design - 3. Pastebin](http://img.youtube.com/vi/g7f5phmt0Tc/0.jpg)](http://www.youtube.com/watch?v=g7f5phmt0Tc&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 3. Pastebin")
+
 Let's design a Pastebin like web service, where users can store plain text. Users of the service will enter a piece of text and get a randomly generated URL to access it. Similar Services: pasted.co, hastebin.com, chopapp.com Difficulty Level: Easy
  
 ## 1. What is Pastebin?
@@ -113,7 +115,8 @@ addPaste(api_dev_key, paste_data, custom_url=None user_name=None, paste_name=Non
 * paste_data (string): Textual data of the paste.
 * custom_url (string): Optional custom URL.
 * user_name (string): Optional user name to be used to generate URL.
-* paste_name (string): Optional name of the paste expire_date (string): Optional expiration date for the paste.
+* paste_name (string): Optional name of the paste 
+* expire_date (string): Optional expiration date for the paste.
  
 **Returns: (string)**
 
