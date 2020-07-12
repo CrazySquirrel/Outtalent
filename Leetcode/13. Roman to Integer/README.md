@@ -65,3 +65,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Iterative approach](solution1.md) | O(n) | O(1) |
+
+## Video
+
+[![13. Roman to Integer](http://img.youtube.com/vi/wtogO3npgUU/0.jpg)](http://www.youtube.com/watch?v=wtogO3npgUU&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "13. Roman to Integer")

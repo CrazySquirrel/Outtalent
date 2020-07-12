@@ -23,5 +23,11 @@ A solution set is:
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Two sum](solution1.md) | O(n<sup>2</sup>) | O(n<sup>2</sup>) |
+| [Two sum](solution1.md) | O(n<sup>3</sup>) | O(n<sup>2</sup>) |
 | [Four pointers (Optimized)](solution2.md) | O(n<sup>3</sup>)<sup>*</sup> | O(1) |
+| [Two Pointers](solution3.md) | O(n<sup>k−1</sup>) -> O(n<sup>3</sup>) | O(n) |
+| [Two Pointers (Hash Set)](solution4.md) | O(n<sup>k−1</sup>) -> O(n<sup>3</sup>) | O(n) |
+
+## Video
+
+[![18. 4Sum](http://img.youtube.com/vi/isIRZcIvnKk/0.jpg)](http://www.youtube.com/watch?v=isIRZcIvnKk&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "18. 4Sum")

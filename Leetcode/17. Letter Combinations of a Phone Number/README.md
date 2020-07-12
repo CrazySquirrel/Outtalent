@@ -19,5 +19,9 @@ Although the above answer is in lexicographical order, your answer could be in a
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Backtracking](solution1.md) | O(3<sup>N</sup> * m<sup>N</sup>) | O(3<sup>N</sup> * m<sup>N</sup>)  |
-| [Recursion](solution2.md) | O(3<sup>N</sup> * m<sup>N</sup>) | O(3<sup>N</sup> * m<sup>N</sup>)  |
+| [Backtracking](solution1.md) | O(3<sup>N</sup> * 4<sup>M</sup>) | O(3<sup>N</sup> * 4<sup>M</sup>)  |
+| [Recursion](solution2.md) | O(3<sup>N</sup> * 4<sup>M</sup>) | O(3<sup>N</sup> * 4<sup>M</sup>)  |
+
+## Video
+
+[![17. Letter Combinations of a Phone Number](http://img.youtube.com/vi/KVxNVA9i3aY/0.jpg)](http://www.youtube.com/watch?v=KVxNVA9i3aY&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "17. Letter Combinations of a Phone Number")

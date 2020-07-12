@@ -16,3 +16,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 |-------------|-----------------|------------------|
 | [Two pointers](solution1.md) | O(n<sup>2</sup>) | O(1) |
 | [Two pointers (Optimized)](solution2.md) | O(n<sup>2</sup>)<sup>*</sup> | O(1) |
+
+## Video
+
+[![16. 3Sum Closest](http://img.youtube.com/vi/yp4Pmebxtzw/0.jpg)](http://www.youtube.com/watch?v=yp4Pmebxtzw&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "16. 3Sum Closest")

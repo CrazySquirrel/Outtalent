@@ -26,19 +26,19 @@ class Solution:
 
         result = set()
 
-        n = len(nums)
+        l = len(nums)
 
-        for a in range(n - 3):
+        for a in range(l - 3):
             if a > 0 and nums[a] == nums[a - 1]: continue
             if nums[a] + nums[a + 1] + nums[a + 2] + nums[a + 3] > target: break
-            if nums[a] + nums[n - 3] + nums[n - 2] + nums[n - 1] < target: continue
+            if nums[a] + nums[l - 3] + nums[l - 2] + nums[l - 1] < target: continue
 
-            for b in range(a + 1, n - 2):
+            for b in range(a + 1, l - 2):
                 if b > a + 1 and nums[b] == nums[b - 1]: continue
                 if nums[a] + nums[b] + nums[b + 1] + nums[b + 2] > target: break
-                if nums[a] + nums[b] + nums[n - 2] + nums[n - 1] < target: continue
+                if nums[a] + nums[b] + nums[l - 2] + nums[l - 1] < target: continue
 
-                c, d = b + 1, n - 1
+                c, d = b + 1, l - 1
 
                 rem_target = target - (nums[a] + nums[b])
 
@@ -63,4 +63,4 @@ class Solution:
 
 * Space complexity: O(1)
 
-[Prev](solution1.md)
+[Prev](solution1.md) [Next](solution3.md)

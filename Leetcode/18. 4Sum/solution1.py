@@ -1,12 +1,10 @@
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        two_sum = {}
+        two_sum = collections.defaultdict(list)
 
         for a in range(len(nums) - 1):
             for b in range(a + 1, len(nums)):
-                sum_ab = nums[a] + nums[b]
-                if sum_ab not in two_sum: two_sum[sum_ab] = []
-                two_sum[sum_ab].append((a, b))
+                two_sum[nums[a] + nums[b]].append((a, b))
 
         result = set()
 

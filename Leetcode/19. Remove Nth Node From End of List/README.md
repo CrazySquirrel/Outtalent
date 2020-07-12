@@ -24,3 +24,7 @@ Could you do this in one pass?
 |-------------|-----------------|------------------|
 | [Two pass algorithm](solution1.md) | O(L) | O(1) |
 | [One pass algorithm](solution2.md) | O(L) | O(1) |
+
+## Video
+
+[![19. Remove Nth Node From End of List](http://img.youtube.com/vi/V8RdOfCQ4SQ/0.jpg)](http://www.youtube.com/watch?v=V8RdOfCQ4SQ&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "19. Remove Nth Node From End of List")

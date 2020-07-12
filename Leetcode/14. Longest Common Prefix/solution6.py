@@ -6,16 +6,16 @@ class TrieNode:
     def contains_key(self, c: str) -> bool:
         return c in self.links
 
-    def get_links(self):
+    def get_links(self) -> int:
         return len(self.links)
 
     def get(self, c: str) -> "TrieNode":
         return self.links[c]
 
-    def put(self, c: str, node: "TrieNode"):
+    def put(self, c: str, node: "TrieNode") -> None:
         self.links[c] = node
 
-    def set_end(self):
+    def set_end(self) -> None:
         self.end = True
 
     def is_end(self) -> bool:
@@ -26,50 +26,38 @@ class Trie:
     def __init__(self):
         self.root = TrieNode()
 
-    def insert(self, word: str):
+    def insert(self, word: str) -> None:
         node = self.root
-
-        for i in range(len(word)):
-            if not node.contains_key(word[i]):
-                node.put(word[i], TrieNode())
-
-            node = node.get(word[i])
-
+        for w in word:
+            if not node.contains_key(w): node.put(w, TrieNode())
+            node = node.get(w)
         node.set_end()
 
     def search_prefix(self, word: str) -> "TrieNode":
         node = self.root
-
-        for i in range(len(word)):
-            if node.contains_key(word[i]):
-                node = node.get(word[i])
-            else:
-                break
-
+        for w in word:
+            if not node.contains_key(w): break
+            node = node.get(w)
         return node
 
     def search(self, word: str) -> bool:
         node = self.search_prefix(word)
-
         return node is not None and node.is_end()
 
-    def starts_with(self, prefix: str) -> bool:
-
+    def start_with(self, prefix: str) -> bool:
         node = self.search_prefix(prefix)
         return node is not None
 
     def search_longest_prefix(self, word: str) -> str:
         node = self.root
-        prefix = []
-
-        for i in range(len(word)):
-            if node.contains_key(word[i]) and node.get_links() == 1 and not node.is_end():
-                prefix.append(word[i])
-                node = node.get(word[i])
+        prefix = ''
+        for w in word:
+            if node.contains_key(w) and node.get_links() == 1 and not node.is_end():
+                prefix += w
+                node = node.get(w)
             else:
                 break
-
-        return ''.join(prefix)
+        return prefix
 
 
 class Solution:
@@ -78,8 +66,6 @@ class Solution:
         if len(strs) == 1: return strs[0]
 
         trie = Trie()
-
-        for i in range(len(strs)):
-            trie.insert(strs[i])
+        for s in strs: trie.insert(s)
 
         return trie.search_longest_prefix(strs[0])

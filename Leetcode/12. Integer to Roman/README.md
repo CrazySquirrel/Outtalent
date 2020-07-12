@@ -67,3 +67,6 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 | [Iterative approach](solution1.md) | O(1) | O(1) |
 | [Mathematical approach](solution2.md) | O(1) | O(1) |
 
+## Video
+
+[![12. Integer to Roman](http://img.youtube.com/vi/odPsz2e4eOo/0.jpg)](http://www.youtube.com/watch?v=odPsz2e4eOo&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "12. Integer to Roman")

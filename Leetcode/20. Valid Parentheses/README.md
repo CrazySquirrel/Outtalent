@@ -49,3 +49,7 @@ Output: true
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Stacks](solution1.md) | O(n) | O(n) |
+
+## Video
+
+[![20. Valid Parentheses](http://img.youtube.com/vi/8AQs-KY1mCk/0.jpg)](http://www.youtube.com/watch?v=8AQs-KY1mCk&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "20. Valid Parentheses")

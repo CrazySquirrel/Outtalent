@@ -28,3 +28,7 @@ A solution set is:
 | [Two pointers](solution4.md) | O(n<sup>2</sup>) | O(r) |
 | [Split negative and positive](solution5.md) | O(n + m<sup>2</sup>) | O(n + r) |
 | [Binary search in range](solution6.md) | O(n + m) | O(n + r) |
+
+## Video
+
+[![15. 3Sum](http://img.youtube.com/vi/_IGbHmo8d1o/0.jpg)](http://www.youtube.com/watch?v=_IGbHmo8d1o&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "15. 3Sum")

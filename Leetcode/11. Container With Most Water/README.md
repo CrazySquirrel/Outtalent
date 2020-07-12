@@ -19,3 +19,7 @@ Output: 49
 |-------------|-----------------|------------------|
 | [Brute Force](solution1.md) | O(n<sup>2</sup>) | O(1) |
 | [Two Pointer Approach](solution2.md) | O(n) | O(1) |
+
+## Video
+
+[![11. Container With Most Water](http://img.youtube.com/vi/WSCYmTc92ik/0.jpg)](http://www.youtube.com/watch?v=WSCYmTc92ik&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "11. Container With Most Water")

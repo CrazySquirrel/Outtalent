@@ -25,8 +25,8 @@ class Solution:
 
 ## Complexity Analysis
 
-* Time complexity : O(3<sup>N</sup> * m<sup>N</sup>) 
+* Time complexity : O(3<sup>N</sup> * 4<sup>M</sup>) 
 
-* Space complexity : O(3<sup>N</sup> * m<sup>N</sup>) 
+* Space complexity : O(3<sup>N</sup> * 4<sup>M</sup>) 
 
 [Prev](solution1.md)
