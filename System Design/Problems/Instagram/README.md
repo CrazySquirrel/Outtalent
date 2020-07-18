@@ -1,5 +1,7 @@
 # Instagram
 
+[![System Design - 4. Instagram](http://img.youtube.com/vi/tqPvm02_vGI/0.jpg)](http://www.youtube.com/watch?v=tqPvm02_vGI&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 4. Instagram")
+
 Let's design a photo-sharing service like Instagram, where users can upload photos to share them with other users.
 
 Similar Services: Flickr, Picasa
