@@ -25,3 +25,6 @@ Output: 1->1->2->3->4->4->5->6
 | [Merge lists one by one](solution5.md) | O(K * N) | O(1) |
 | [Merge with Divide And Conquer](solution6.md) | O(N log K) | O(1) |
 
+## Video
+
+[![23. Merge k Sorted Lists](http://img.youtube.com/vi/SENsA3125cQ/0.jpg)](http://www.youtube.com/watch?v=SENsA3125cQ&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "23. Merge k Sorted Lists")

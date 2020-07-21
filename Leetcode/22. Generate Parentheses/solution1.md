@@ -9,31 +9,33 @@ To check whether a sequence is valid, we keep track of balance, the net number o
 ```python
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        def generate(A=[]):
-            if len(A) == 2 * n:
-                if valid(A):
-                    ans.append("".join(A))
+        def generate(path):
+            if len(path) == 2 * n:
+                if valid(path):
+                    result.append("".join(path))
             else:
-                A.append('(')
-                generate(A)
-                A.pop()
-                A.append(')')
-                generate(A)
-                A.pop()
+                path.append('(')
+                generate(path)
+                path.pop()
+                path.append(')')
+                generate(path)
+                path.pop()
 
-        def valid(A):
-            bal = 0
-            for c in A:
+        def valid(path):
+            counter = 0
+            for c in path:
                 if c == '(':
-                    bal += 1
+                    counter += 1
                 else:
-                    bal -= 1
-                if bal < 0: return False
-            return bal == 0
+                    counter -= 1
+                if counter < 0: return False
+            return counter == 0
 
-        ans = []
-        generate()
-        return ans
+        result = []
+
+        generate([])
+
+        return result
 ```
 
 ## Complexity Analysis

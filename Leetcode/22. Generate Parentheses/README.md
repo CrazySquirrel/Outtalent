@@ -21,3 +21,7 @@ For example, given n = 3, a solution set is:
 | [Brute Force](solution1.md) | O(2<sup>2n</sup>n) | O(2<sup>2n</sup>n) |
 | [Backtracking](solution2.md) | ![](3.png) | ![](3.png) |
 | [Closure Number](solution3.md) | ![](3.png) | ![](3.png) |
+
+## Video
+
+[![22. Generate Parentheses](http://img.youtube.com/vi/TXtAjpUL-60/0.jpg)](http://www.youtube.com/watch?v=TXtAjpUL-60&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "22. Generate Parentheses")
