@@ -1,5 +1,7 @@
 # Dropbox
 
+[![System Design - 5. Dropbox](http://img.youtube.com/vi/6ynrmtuBoQo/0.jpg)](http://www.youtube.com/watch?v=6ynrmtuBoQo&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 5. Dropbox")
+
 Let’s design a file hosting service like Dropbox or Google Drive. Cloud file storage enables users to store their data on remote servers. Usually, these servers are maintained by cloud storage providers and made available to users over a network (typically through the Internet). Users pay for their cloud data storage on a monthly basis. 
 
 Similar Services: OneDrive, Google Drive 
@@ -22,7 +24,7 @@ Another benefit of cloud storage is that it offers 100% reliability and durabili
 
 Users will never have to worry about getting out of storage space. With cloud storage, you have unlimited storage as long as you are ready to pay for it.
 
-If you haven’t used [dropbox.com](https://www.dropbox.com/) 5 before, we would highly recommend creating an account there and uploading/editing a file and also going through different options their service offers. This will help you a lot in understanding this chapter better.
+If you haven’t used [dropbox.com](https://www.dropbox.com/) before, we would highly recommend creating an account there and uploading/editing a file and also going through different options their service offers. This will help you a lot in understanding this chapter better.
 
 ## 2. Requirements and Goals of the System
 
