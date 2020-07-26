@@ -5,5 +5,5 @@ class Solution:
             if result and i[0] <= result[-1][1]:
                 result[-1][1] = max(result[-1][1], i[1])
             else:
-                result += i,
+                result += i
         return result
