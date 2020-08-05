@@ -1,8 +1,8 @@
 # Algorithms, data structures and programming solutions.
 
-## Behavioral Questions
+## Behavioral interview
 
-* [Behavioral Question](https://github.com/CrazySquirrel/Outtalent/tree/master/Behavioral%20Question/README.md)
+* [Behavioral interview](https://github.com/CrazySquirrel/Outtalent/tree/master/Behavioral%20interview/README.md)
 
 ## Algorithms and data structures
 
