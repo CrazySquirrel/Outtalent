@@ -6,22 +6,11 @@ We reduce the look up time from O(n) to O(1) by trading space for speed. A hash 
 
 A simple implementation uses two iterations. In the first iteration, we add each element's value and its index to the table. Then, in the second iteration we check if each element's complement (target−nums[i]) exists in the table. Beware that the complement must not be nums[i] itself!
 
-```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        h = {}
+## Solutions:
 
-        for i in range(len(nums)):
-            h[nums[i]] = i
-
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            
-            if complement in h and h[complement] != i:
-                return [i, h[complement]]
-
-        raise ValueError('No two sum solution')
-```
+* [Python](./solution2.py)
+* [Java](./solution2.java)
+* [C++](./solution2.cpp)
 
 ## Complexity Analysis:
 

@@ -1,21 +1,12 @@
 # One-pass Hash Table
 
 It turns out we can do it in one-pass. While we iterate and inserting elements into the table, we also look back to check if current element's complement already exists in the table. If it exists, we have found a solution and return immediately.
-```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        h = {}
 
-        for i in range(len(nums)):
-            complement = target - nums[i]
+## Solutions:
 
-            if complement in h:
-                return [i, h[complement]]
-
-            h[nums[i]] = i
-
-        raise ValueError('No two sum solution')
-```
+* [Python](./solution3.py)
+* [Java](./solution3.java)
+* [C++](./solution3.cpp)
 
 ## Complexity Analysis:
 

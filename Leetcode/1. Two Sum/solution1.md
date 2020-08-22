@@ -2,16 +2,11 @@
 
 The brute force approach is simple. Loop through each element x and find if there is another value that equals to target−x.
 
-```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
+## Solutions:
 
-        raise ValueError('No two sum solution')
-```
+* [Python](./solution1.py)
+* [Java](./solution1.java)
+* [C++](./solution1.cpp)
 
 ## Complexity Analysis
 

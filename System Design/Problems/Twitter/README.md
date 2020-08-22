@@ -1,6 +1,10 @@
 # Twitter
 
-Let’s design a Twitter like social networking service. Users of the service will be able to post tweets, follow other people and favorite tweets. Difficulty Level: Medium
+Let’s design a Twitter like social networking service.
+
+Users of the service will be able to post tweets, follow other people and favorite tweets. 
+
+Difficulty Level: Medium
 
 ## 1. What is Twitter?
 

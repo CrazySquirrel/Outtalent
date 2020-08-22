@@ -4,4 +4,4 @@ class Solution:
         for index, num in enumerate(nums):
             if num in h: return [h[num], index]
             h[target - num] = index
-        return None
+        raise ValueError('No two sum solution')
