@@ -7,17 +7,12 @@
 class Solution:
     def increasingBST(self, root: TreeNode) -> TreeNode:
         if not root: return None
-
-        def inorder(node):
-            nonlocal curr
-            if node.left: inorder(node.left)
-            node.left = None
-            curr.right = node
-            curr = node
-            if node.right: inorder(node.right)
-
-        result = curr = TreeNode(None)
-
-        inorder(root)
-
-        return result.right
+        if root.left: root.left = self.increasingBST(root.left)
+        if root.right: root.right = self.increasingBST(root.right)
+        if not root.left: return root
+        result = root.left
+        root.left = None
+        tmp = result
+        while tmp.right: tmp = tmp.right
+        tmp.right = root
+        return result

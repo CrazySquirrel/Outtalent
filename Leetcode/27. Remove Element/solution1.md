@@ -18,7 +18,7 @@ class Solution:
 
 ## Complexity analysis
 
-* Time complexity: O(kn).
+* Time complexity: O(n<sup>2</sup>).
 
 Where k is a cost of pop i element
 

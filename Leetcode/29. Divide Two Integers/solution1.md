@@ -1,3 +1,10 @@
+# Subtraction
+
+## Algorithm
+
+* Keep subtracting the divisor from dividend until dividend becomes less than divisor. The dividend becomes the remainder, and the number of times subtraction is done becomes the quotient.
+
+```python
 INT_MAX = (1 << 31) - 1
 INT_MIN = -1 << 31
 
@@ -11,18 +18,6 @@ class Solution:
 
         result = 0
 
-        while dividend >= (divisor << 1):
-            big_divisor = divisor << 1
-            cnt = 0
-
-            while dividend >= big_divisor:
-                big_divisor <<= 1
-                cnt += 1
-
-            if cnt > 0:
-                result += 1 << cnt
-                dividend -= big_divisor >> 1
-
         while dividend >= divisor:
             dividend -= divisor
             result += 1
@@ -30,3 +25,12 @@ class Solution:
         result = -result if sign < 0 else result
 
         return min(INT_MAX, max(INT_MIN, result))
+```
+
+## Complexity Analysis:
+
+* Time complexity: O(a/b)
+
+* Space Complexity: O(1)
+
+[Next](solution2.md)

@@ -49,10 +49,10 @@ class Solution:
 
 ## Complexity Analysis:
 
-* Time complexity: O(N – K) * K
+* Time complexity: O((S – K) * W)
 
-* Space Complexity: O(N)
+* Space Complexity: O(w)
 
-Where N is th length of S and K total length of all words
+Where S is length of s, k is length of all words in words, W is length of words list and w is length of any word in words list
 
 [Prev](solution1.md)

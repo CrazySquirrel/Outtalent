@@ -1,4 +1,4 @@
-# KMP
+# KMP (Knuth–Morris–Pratt)
 
 ```python
 class Solution:
@@ -28,7 +28,7 @@ class Solution:
 
 ## Complexity Analysis:
 
-* Time complexity: O(n<sup>2</sup>) -> O(m + n)
+* Time complexity: O(m + n)
 
 * Space Complexity: O(n)
 

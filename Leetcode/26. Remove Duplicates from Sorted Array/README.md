@@ -48,5 +48,9 @@ for (int i = 0; i < len; i++) {
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Set and sort](solution1.md) | O(n log n) | O(n) |
-| [One Pointer](solution2.md) | O(n) | O(1) |
+| [One Pointer](solution2.md) | O(n<sup>2</sup>) | O(1) |
 | [Two Pointers](solution3.md) | O(n) | O(1) |
+
+## Video
+
+[![26. Remove Duplicates from Sorted Array](http://img.youtube.com/vi/Rek90qm7nZk/0.jpg)](http://www.youtube.com/watch?v=Rek90qm7nZk&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "26. Remove Duplicates from Sorted Array")

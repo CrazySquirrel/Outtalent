@@ -9,14 +9,11 @@
 ```python
 class Solution:
     def isValid(self, s: str) -> bool:
-        dic = {'[': ']', '(': ')', '{': '}'}
-        stack = []
+        counter = 0
         for c in s:
-            if c in dic:
-                stack.append(dic[c])
-            elif len(stack) == 0 or stack.pop() != c:
-                return False
-        return len(stack) == 0
+            counter += 1 if c == '(' else -1
+            if counter == -1: return False
+        return counter == 0
 
     def longestValidParentheses(self, s: str) -> int:
         if not s: return 0
@@ -28,6 +25,6 @@ class Solution:
 
 Time complexity: O(n<sup>3</sup>)
 
-Space complexity: O(n)
+Space complexity: O(n<sup>2</sup>)
 
 [Next](solution2.md)

@@ -9,19 +9,18 @@ class Solution:
             return i
 
         tmp = []
-        l = list(map(insert, rating))
+        lower = list(map(insert, rating))
 
         tmp = []
-        g = list(map(insert, rating[::-1]))
-        g.reverse()
+        upper = list(map(insert, rating[::-1]))[::-1]
 
         counter = 0
 
         total_length = len(rating)
         index_length = total_length - 1
 
-        for i in range(total_length):
-            counter += l[i] * (index_length - i - g[i])
-            counter += g[i] * (i - l[i])
+        for i, (l, u) in enumerate(zip(lower, upper)):
+            counter += l * (index_length - i - u)
+            counter += u * (i - l)
 
         return counter

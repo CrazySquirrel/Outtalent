@@ -1,5 +1,7 @@
 # Twitter
 
+[![System Design - 7. Twitter](http://img.youtube.com/vi/ADefJ6BUKm8/0.jpg)](http://www.youtube.com/watch?v=ADefJ6BUKm8&list=PL9YvZlrMIj4kwyebpFlDSzFjhqE1-sYfo "System Design - 7. Twitter")
+
 Let’s design a Twitter like social networking service.
 
 Users of the service will be able to post tweets, follow other people and favorite tweets. 

@@ -19,6 +19,6 @@ class Solution:
 
 * Time complexity: O(m * n)
 
-* Space Complexity: O(1)
+* Space Complexity: O(n)
 
 [Prev](solution1.md) [Next](solution3.md)

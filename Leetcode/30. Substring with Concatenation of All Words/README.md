@@ -27,4 +27,8 @@ Output: []
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Brute force](solution1.md) | O(N! * (M + S<sup>2</sup> * M)) | O(S + M) |
-| [Word counter](solution2.md) | O(N – K) * K | O(N) |
+| [Word counter](solution2.md) | O((S – K) * W) | O(w) |
+
+## Video
+
+[![30. Substring with Concatenation of All Words](http://img.youtube.com/vi/IHfgbj45QMc/0.jpg)](http://www.youtube.com/watch?v=IHfgbj45QMc&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "30. Substring with Concatenation of All Words")

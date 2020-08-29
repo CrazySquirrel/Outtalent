@@ -16,7 +16,7 @@ class Solution:
         return len(nums)
 ```
 
-* Time complextiy: O(n).
+* Time complextiy: O(n<sup>2</sup>).
 
 * Space complexity: O(1).
 

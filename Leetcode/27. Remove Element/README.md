@@ -51,7 +51,11 @@ for (int i = 0; i < len; i++) {
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Pop elements](solution1.md) | O(kn) | O(1) |
+| [Pop elements](solution1.md) | O(n<sup>2</sup>) | O(1) |
 | [List comprehension](solution2.md) | O(n) | O(n) |
 | [Two Pointers](solution3.md) | O(n) | O(1) |
 | [Two Pointers (rare)](solution4.md) | O(n) | O(1) |
+
+## Video
+
+[![27. Remove Element](http://img.youtube.com/vi/RrqTwjwN4Ew/0.jpg)](http://www.youtube.com/watch?v=RrqTwjwN4Ew&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "27. Remove Element")

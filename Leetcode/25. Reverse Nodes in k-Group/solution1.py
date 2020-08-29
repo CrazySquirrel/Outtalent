@@ -5,12 +5,12 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if not head or k == 0: return head
+        if not head or k <= 1: return head
 
         test = head
 
         for i in range(k):
-            if test is None: return head
+            if not test: return head
             test = test.next
 
         prev = None

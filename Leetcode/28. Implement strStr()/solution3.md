@@ -51,6 +51,6 @@ class Solution:
 
 * Time complexity: O(m + n)
 
-* Space Complexity: O(1)
+* Space Complexity: O(n)
 
 [Prev](solution2.md) [Next](solution4.md)

@@ -21,4 +21,9 @@ For k = 3, you should return: 3->2->1->4->5
 
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
-| [Group reversion](solution1.md) | O(N) | O(1) |
+| [Recursive](solution1.md) | O(N) | O(N/k) |
+| [Iterative](solution2.md) | O(N) | O(1) |
+
+## Video
+
+[![25. Reverse Nodes in k-Group](http://img.youtube.com/vi/5uSAYYiapoI/0.jpg)](http://www.youtube.com/watch?v=5uSAYYiapoI&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "25. Reverse Nodes in k-Group")

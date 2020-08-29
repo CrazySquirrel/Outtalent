@@ -15,6 +15,7 @@ class Solution:
             if nums[j] != val:
                 nums[i] = nums[j]
                 i += 1
+        nums[:] = nums[:i]
         return i
 ```
 

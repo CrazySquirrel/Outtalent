@@ -19,3 +19,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 |   Approach  | Time complexity | Space complexity |
 |-------------|-----------------|------------------|
 | [Single Pass Approach](solution1.md) | O(n) | O(1) |
+
+## Video
+
+[![31. Next Permutation](http://img.youtube.com/vi/5MD3ZW7Zdts/0.jpg)](http://www.youtube.com/watch?v=5MD3ZW7Zdts&list=PL9YvZlrMIj4msDfX2rTsl4hwETiKiwsy3 "31. Next Permutation")

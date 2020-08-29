@@ -22,9 +22,8 @@
 #         self.next = next
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
-        result = ListNode("*")
-        result.next = head
-        prev = result
+        dummy = ListNode(None, head)
+        prev = dummy
 
         while prev.next and prev.next.next:
             curr = prev.next
@@ -36,13 +35,13 @@ class Solution:
             prev.next = next
             prev = curr
 
-        return result.next
+        return dummy.next
 ```
 
 ## Complexity Analysis
 
 * Time complexity: O(N)
 
-* Space complexity: O(N)
+* Space complexity: O(1)
 
 [Prev](solution1.md)
