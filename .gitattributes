@@ -2,3 +2,44 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
+
+Leetcode/339.[[:space:]]Nested[[:space:]]List[[:space:]]Weight[[:space:]]Sum/** filter=git-crypt diff=git-crypt
+Leetcode/346.[[:space:]]Moving[[:space:]]Average[[:space:]]from[[:space:]]Data[[:space:]]Stream/** filter=git-crypt diff=git-crypt
+Leetcode/359.[[:space:]]Logger[[:space:]]Rate[[:space:]]Limiter/** filter=git-crypt diff=git-crypt
+Leetcode/511.[[:space:]]Game[[:space:]]Play[[:space:]]Analysis[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/577.[[:space:]]Employee[[:space:]]Bonus/** filter=git-crypt diff=git-crypt
+Leetcode/584.[[:space:]]Find[[:space:]]Customer[[:space:]]Referee/** filter=git-crypt diff=git-crypt
+Leetcode/586.[[:space:]]Customer[[:space:]]Placing[[:space:]]the[[:space:]]Largest[[:space:]]Number[[:space:]]of[[:space:]]Orders/** filter=git-crypt diff=git-crypt
+Leetcode/613.[[:space:]]Shortest[[:space:]]Distance[[:space:]]in[[:space:]]a[[:space:]]Line/** filter=git-crypt diff=git-crypt
+Leetcode/760.[[:space:]]Find[[:space:]]Anagram[[:space:]]Mappings/** filter=git-crypt diff=git-crypt
+Leetcode/1050.[[:space:]]Actors[[:space:]]and[[:space:]]Directors[[:space:]]Who[[:space:]]Cooperated[[:space:]]At[[:space:]]Least[[:space:]]Three[[:space:]]Times/** filter=git-crypt diff=git-crypt
+Leetcode/1068.[[:space:]]Product[[:space:]]Sales[[:space:]]Analysis[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/1069.[[:space:]]Product[[:space:]]Sales[[:space:]]Analysis[[:space:]]II/** filter=git-crypt diff=git-crypt
+Leetcode/1082.[[:space:]]Sales[[:space:]]Analysis[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/1085.[[:space:]]Sum[[:space:]]of[[:space:]]Digits[[:space:]]in[[:space:]]the[[:space:]]Minimum[[:space:]]Number/** filter=git-crypt diff=git-crypt
+Leetcode/1086.[[:space:]]High[[:space:]]Five/** filter=git-crypt diff=git-crypt
+Leetcode/1119.[[:space:]]Remove[[:space:]]Vowels[[:space:]]from[[:space:]]a[[:space:]]String/** filter=git-crypt diff=git-crypt
+Leetcode/1134.[[:space:]]Armstrong[[:space:]]Number/** filter=git-crypt diff=git-crypt
+Leetcode/1148.[[:space:]]Article[[:space:]]Views[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/1165.[[:space:]]Single-Row[[:space:]]Keyboard/** filter=git-crypt diff=git-crypt
+Leetcode/1173.[[:space:]]Immediate[[:space:]]Food[[:space:]]Delivery[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/1180.[[:space:]]Count[[:space:]]Substrings[[:space:]]with[[:space:]]Only[[:space:]]One[[:space:]]Distinct[[:space:]]Letter/** filter=git-crypt diff=git-crypt
+Leetcode/1213.[[:space:]]Intersection[[:space:]]of[[:space:]]Three[[:space:]]Sorted[[:space:]]Arrays/** filter=git-crypt diff=git-crypt
+Leetcode/1251.[[:space:]]Average[[:space:]]Selling[[:space:]]Price/** filter=git-crypt diff=git-crypt
+Leetcode/1279.[[:space:]]Traffic[[:space:]]Light[[:space:]]Controlled[[:space:]]Intersection/** filter=git-crypt diff=git-crypt
+Leetcode/1280.[[:space:]]Students[[:space:]]and[[:space:]]Examinations/** filter=git-crypt diff=git-crypt
+Leetcode/1303.[[:space:]]Find[[:space:]]the[[:space:]]Team[[:space:]]Size/** filter=git-crypt diff=git-crypt
+Leetcode/1327.[[:space:]]List[[:space:]]the[[:space:]]Products[[:space:]]Ordered[[:space:]]in[[:space:]]a[[:space:]]Period/** filter=git-crypt diff=git-crypt
+Leetcode/1350.[[:space:]]Students[[:space:]]With[[:space:]]Invalid[[:space:]]Departments/** filter=git-crypt diff=git-crypt
+Leetcode/1378.[[:space:]]Replace[[:space:]]Employee[[:space:]]ID[[:space:]]With[[:space:]]The[[:space:]]Unique[[:space:]]Identifier/** filter=git-crypt diff=git-crypt
+Leetcode/1407.[[:space:]]Top[[:space:]]Travellers/** filter=git-crypt diff=git-crypt
+Leetcode/1435.[[:space:]]Create[[:space:]]a[[:space:]]Session[[:space:]]Bar[[:space:]]Chart/** filter=git-crypt diff=git-crypt
+Leetcode/1469.[[:space:]]Find[[:space:]]All[[:space:]]The[[:space:]]Lonely[[:space:]]Nodes/** filter=git-crypt diff=git-crypt
+Leetcode/1474.[[:space:]]Delete[[:space:]]N[[:space:]]Nodes[[:space:]]After[[:space:]]M[[:space:]]Nodes[[:space:]]of[[:space:]]a[[:space:]]Linked[[:space:]]List/** filter=git-crypt diff=git-crypt
+Leetcode/1484.[[:space:]]Group[[:space:]]Sold[[:space:]]Products[[:space:]]By[[:space:]]The[[:space:]]Date/** filter=git-crypt diff=git-crypt
+Leetcode/1511.[[:space:]]Customer[[:space:]]Order[[:space:]]Frequency/** filter=git-crypt diff=git-crypt
+Leetcode/1517.[[:space:]]Find[[:space:]]Users[[:space:]]With[[:space:]]Valid[[:space:]]E-Mails/** filter=git-crypt diff=git-crypt
+Leetcode/1527.[[:space:]]Patients[[:space:]]With[[:space:]]a[[:space:]]Condition/** filter=git-crypt diff=git-crypt
+Leetcode/1565.[[:space:]]Unique[[:space:]]Orders[[:space:]]and[[:space:]]Customers[[:space:]]Per[[:space:]]Month/** filter=git-crypt diff=git-crypt
+Leetcode/1571.[[:space:]]Warehouse[[:space:]]Manager/** filter=git-crypt diff=git-crypt
+Leetcode/1581.[[:space:]]Customer[[:space:]]Who[[:space:]]Visited[[:space:]]but[[:space:]]Did[[:space:]]Not[[:space:]]Make[[:space:]]Any[[:space:]]Transactions/** filter=git-crypt diff=git-crypt

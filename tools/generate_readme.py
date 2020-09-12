@@ -1,5 +1,13 @@
 import os
 import urllib.parse
+import subprocess
+
+secret_files = subprocess.Popen('git-crypt status -e',
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE,
+                                shell=True).communicate()[0].decode('utf-8').splitlines()
+
+secret_files = {x.replace('    encrypted: ', '').replace('../', '') for x in secret_files if 'README.md' in x}
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 root_path = os.path.abspath(os.path.join(dir_path, '../'))
@@ -28,9 +36,13 @@ for site in SITES:
             tasks.append(file)
 
     for task in sorted(tasks, key=lambda x: int(x.split('.')[0])):
-        site_readme.append('* [%s](%s/README.md)' % (task,urllib.parse.quote(task)))
+        is_secret = ('%s/%s/README.md' % (site, task)) in secret_files
+        if is_secret:
+            site_readme.append('* ~~%s~~ (Secret)' % (task))
+        else:
+            site_readme.append('* [%s](%s/README.md)' % (task, urllib.parse.quote(task)))
 
     with open(os.path.join(site_path, 'README.md'), 'w') as readme:
-        readme.write('\r\n'.join(site_readme))
+        readme.write('\n'.join(site_readme))
 
 print('README.md UPDATED!!!')
