@@ -3,10 +3,22 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 
+Leetcode/157.[[:space:]]Read[[:space:]]N[[:space:]]Characters[[:space:]]Given[[:space:]]Read4/** filter=git-crypt diff=git-crypt
+Leetcode/170.[[:space:]]Two[[:space:]]Sum[[:space:]]III[[:space:]]-[[:space:]]Data[[:space:]]structure[[:space:]]design/** filter=git-crypt diff=git-crypt
+Leetcode/243.[[:space:]]Shortest[[:space:]]Word[[:space:]]Distance/** filter=git-crypt diff=git-crypt
+Leetcode/246.[[:space:]]Strobogrammatic[[:space:]]Number/** filter=git-crypt diff=git-crypt
+Leetcode/252.[[:space:]]Meeting[[:space:]]Rooms/** filter=git-crypt diff=git-crypt
+Leetcode/266.[[:space:]]Palindrome[[:space:]]Permutation/** filter=git-crypt diff=git-crypt
+Leetcode/270.[[:space:]]Closest[[:space:]]Binary[[:space:]]Search[[:space:]]Tree[[:space:]]Value/** filter=git-crypt diff=git-crypt
+Leetcode/276.[[:space:]]Paint[[:space:]]Fence/** filter=git-crypt diff=git-crypt
+Leetcode/293.[[:space:]]Flip[[:space:]]Game/** filter=git-crypt diff=git-crypt
 Leetcode/339.[[:space:]]Nested[[:space:]]List[[:space:]]Weight[[:space:]]Sum/** filter=git-crypt diff=git-crypt
 Leetcode/346.[[:space:]]Moving[[:space:]]Average[[:space:]]from[[:space:]]Data[[:space:]]Stream/** filter=git-crypt diff=git-crypt
 Leetcode/359.[[:space:]]Logger[[:space:]]Rate[[:space:]]Limiter/** filter=git-crypt diff=git-crypt
+Leetcode/408.[[:space:]]Valid[[:space:]]Word[[:space:]]Abbreviation/** filter=git-crypt diff=git-crypt
+Leetcode/422.[[:space:]]Valid[[:space:]]Word[[:space:]]Square/** filter=git-crypt diff=git-crypt
 Leetcode/511.[[:space:]]Game[[:space:]]Play[[:space:]]Analysis[[:space:]]I/** filter=git-crypt diff=git-crypt
+Leetcode/512.[[:space:]]Game[[:space:]]Play[[:space:]]Analysis[[:space:]]II/** filter=git-crypt diff=git-crypt
 Leetcode/577.[[:space:]]Employee[[:space:]]Bonus/** filter=git-crypt diff=git-crypt
 Leetcode/584.[[:space:]]Find[[:space:]]Customer[[:space:]]Referee/** filter=git-crypt diff=git-crypt
 Leetcode/586.[[:space:]]Customer[[:space:]]Placing[[:space:]]the[[:space:]]Largest[[:space:]]Number[[:space:]]of[[:space:]]Orders/** filter=git-crypt diff=git-crypt

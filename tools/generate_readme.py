@@ -89,6 +89,6 @@ for site in SITES:
         readme.write('\n'.join(site_readme))
 
 if solved:
-    print('Should be added: %s' % (''.join(map(str, solved))))
+    print('Should be added: %s' % (', '.join(map(str, solved))))
 
 print('README.md UPDATED!!!')

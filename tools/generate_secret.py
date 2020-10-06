@@ -38,7 +38,7 @@ with open(os.path.join(root_path, '.gitattributes'), 'w') as readme:
     readme.write('\n'.join(gitattributes))
 
 if should_not_be_secret:
-    print('Should not be secret: %s' % (''.join(map(str, should_not_be_secret))))
+    print('Should not be secret: %s' % (', '.join(map(str, should_not_be_secret))))
 
 if should_be_secret:
-    print('Should be secret: %s' % (''.join(map(str, should_be_secret))))
+    print('Should be secret: %s' % (', '.join(map(str, should_be_secret))))
