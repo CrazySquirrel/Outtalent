@@ -7,7 +7,7 @@
 * [Dropbox](Dropbox/README.md)
 * [Facebook Messenger](Facebook%20Messenger/README.md)
 * [Twitter](Twitter/README.md)
-* [Youtube or Netflix](Youtube%20or%20Netflix/README.md)
+* [YouTube or Netflix](YouTube%20or%20Netflix/README.md)
 * [Typeahead Suggestion](Typeahead%20Suggestion/README.md)
 * [API Rate Limiter](API%20Rate%20Limiter/README.md)
 * [Twitter Search](Twitter%20Search/README.md)

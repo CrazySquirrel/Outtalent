@@ -27,7 +27,7 @@
 * [Dropbox](Problems/Dropbox/README.md)
 * [Facebook Messenger](Problems/Facebook%20Messenger/README.md)
 * [Twitter](Problems/Twitter/README.md)
-* [Youtube or Netflix](Problems/Youtube%20or%20Netflix/README.md)
+* [YouTube or Netflix](Problems/YouTube%20or%20Netflix/README.md)
 * [Typeahead Suggestion](Problems/Typeahead%20Suggestion/README.md)
 * [API Rate Limiter](Problems/API%20Rate%20Limiter/README.md)
 * [Twitter Search](Problems/Twitter%20Search/README.md)

@@ -172,4 +172,4 @@ We can perform the following optimizations on the client to improve user’s exp
 
 Users will receive some typeahead suggestions based on their historical searches, location, language, etc. We can store the personal history of each user separately on the server and cache them on the client too. The server can add these personalized terms in the final set, before sending it to the user. Personalized searches should always come before others.
 
-[Prev](../Youtube%20or%20Netflix/README.md) [Next](../API%20Rate%20Limiter/README.md)
+[Prev](../YouTube%20or%20Netflix/README.md) [Next](../API%20Rate%20Limiter/README.md)

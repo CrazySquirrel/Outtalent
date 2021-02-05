@@ -1,4 +1,4 @@
-# Youtube or Netflix
+# YouTube or Netflix
 
 Let’s design a video sharing service like Youtube, where users will be able to upload/view/search videos. 
 
